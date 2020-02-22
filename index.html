@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Day on Mars</title>
+
+    <link rel="stylesheet" href="./public/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nova+Cut|Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <header class="header debug">
+          <p>it's a beautiful day on</p>
+          <h1>Elysium Planitia</h1>
+        </header>
+        <section class="description debug">
+          The
+          <strong
+            >Interior Exploration using Seismic Investigations, Geodesy and Heat
+            Transport (InSight)</strong
+          >
+          mission is a robotic lander designed to study the deep interior of the
+          planet Mars. InSight is stationed in
+          <strong>Elysium Planitia</strong>, a broad plain near the equator of
+          Mars. While InSight is calculating seismic vibrations, it is also
+          reporting back weather data.
+        </section>
+        <section class="weather__row debug">
+          <div class="box debug" id="box1">
+            <div class="sol" id="day1">Sol</div>
+            <br />
+            <div class="compass sol__info" id="cp1"></div>
+            <div class="minCel sol__info" id="min1"></div>
+            <div class="maxCel sol__info" id="max1">maxCelcius</div>
+          </div>
+          <div class="box debug">
+            <div class="sol" id="day2">Sol</div>
+            <br />
+            <div class="compass sol__info" id="cp2">Compass Point</div>
+            <div class="minCel sol__info" id="min2">minCelcius</div>
+            <div class="maxCel sol__info" id="max2">maxCelcius</div>
+          </div>
+          <div class="box debug">
+            <div class="sol" id="day3">Sol</div>
+            <br />
+            <div class="compass sol__info" id="cp3">Compass Point</div>
+            <div class="minCel sol__info" id="min3">minCelcius</div>
+            <div class="maxCel sol__info" id="max3">maxCelcius</div>
+          </div>
+          <div class="box debug">
+            <div class="sol" id="day4">Sol</div>
+            <br />
+            <div class="compass sol__info" id="cp4">Compass Point</div>
+            <div class="minCel sol__info" id="min4">minCelcius</div>
+            <div class="maxCel sol__info" id="max4">maxCelcius</div>
+          </div>
+          <div class="box debug">
+            <div class="sol" id="day5">Sol</div>
+            <br />
+            <div class="compass sol__info" id="cp5">Compass Point</div>
+            <div class="minCel sol__info" id="min5">minCelcius</div>
+            <div class="maxCel sol__info" id="max5">maxCelcius</div>
+          </div>
+          <div class="box debug">
+            <div class="sol" id="day6">Sol</div>
+            <br />
+            <div class="sol__info" id="cp6">Compass Point</div>
+            <div class="minCel sol__info" id="min6">minCelcius</div>
+            <div class="maxCel sol__info" id="max6">maxCelcius</div>
+          </div>
+          <div class="box debug">
+            <div class="sol" id="day7">Sol</div>
+            <br />
+            <div class="compass sol__info" id="cp7">Compass Point</div>
+            <div class="minCel sol__info" id="min7">minCelcius</div>
+            <div class="maxCel sol__info" id="max7">maxCelcius</div>
+          </div>
+        </section>
+        <section class="info debug">
+          <div class="image debug">
+            <img src="./public/img/insight-main.gif" height="600" />
+          </div>
+          <div class="info__text debug">
+            <p>
+              <strong>InSight: Mars Weather Service API</strong> provides
+              per-Sol summary data for each of the last seven available
+              <strong>Sols (Martian Days)</strong>. This website includes the
+              high and low celcius recorded, as well as the most common wind
+              direction.
+            </p>
+            <br />
+            <p>
+              As more data from a particular Sol are downlinked from the
+              spacecraft (sometimes several days later), these values are
+              recalculated, and consequently may change as more data are
+              received on Earth.
+            </p>
+            <br />
+            <p>
+              This API is maintained and provided by NASA Jet Propulsion
+              Laboratory and Cornell University. <a href="https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf">You can find out more about the
+              InSight API here.</a>
+            </p>
+            <br /><br />
+
+              <section class="martian__selfies debug">
+                <div class="selfie debug" id="one"></div>
+                <div class="selfie debug" id="two"></div>
+                <div class="selfie debug" id="three"></div>
+                <div class="selfie debug" id="four"></div>
+              </section><br>
+              <p>
+              <span
+                >website built by
+                <a href="http://http://cdacanay.com/">Christina Dacanay</a> |
+                DWD 2020</span
+              >
+            </p>
+          </div>
+        <!-- </section>
+        <section class="martian__selfies debug">
+          <div class="selfie debug" id="one"></div>
+          <div class="selfie debug" id="two"></div>
+          <div class="selfie debug" id="three"></div>
+          <div class="selfie debug" id="four"></div>
+        </section> -->
+      </main>
+    </div>
+    <script src="./public/main.js"></script>
+  </body>
+</html>
